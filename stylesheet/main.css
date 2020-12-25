@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* SCSS VARIABLES */
+/* ###########################
+ GLOBAL 
+ ########################### */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #212529;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password],
+input[type=date],
+input[type=time],
+input[type=file],
+.custom-file-input,
+.custom-file-label,
+textarea.form-control,
+select.custom-select {
+  border-radius: 0;
+  border: 1px solid #c4c4c4;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=date]:focus,
+input[type=time]:focus,
+input[type=file]:focus,
+.custom-file-input:focus,
+.custom-file-label:focus,
+textarea.form-control:focus,
+select.custom-select:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #5b9438;
+}
+input[type=text]::placeholder,
+input[type=number]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder,
+input[type=date]::placeholder,
+input[type=time]::placeholder,
+input[type=file]::placeholder,
+.custom-file-input::placeholder,
+.custom-file-label::placeholder,
+textarea.form-control::placeholder,
+select.custom-select::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+input[type=text]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=date]::-webkit-input-placeholder,
+input[type=time]::-webkit-input-placeholder,
+input[type=file]::-webkit-input-placeholder,
+.custom-file-input::-webkit-input-placeholder,
+.custom-file-label::-webkit-input-placeholder,
+textarea.form-control::-webkit-input-placeholder,
+select.custom-select::-webkit-input-placeholder {
+  /* Edge */
+  font-family: "Roboto", sans-serif;
+}
+input[type=text]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=date]:-ms-input-placeholder,
+input[type=time]:-ms-input-placeholder,
+input[type=file]:-ms-input-placeholder,
+.custom-file-input:-ms-input-placeholder,
+.custom-file-label:-ms-input-placeholder,
+textarea.form-control:-ms-input-placeholder,
+select.custom-select:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: "Roboto", sans-serif;
+}
+
+.form-control + .text-danger.hide {
+  display: none;
+}
+
+/* REMOVE ARROW BUTTONS FOR NUMBER INPUT FIELDS
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.position_absolute {
+  position: absolute;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.text_decoration_0 {
+  text-decoration: none;
+}
+
+.text_decoration_0 {
+  text-decoration: none;
+}
+.text_decoration_0:hover {
+  text-decoration: none;
+}
+
+/* ###########################
+ TYPOGRAPHY
+ ########################### */
+.display_1 {
+  font-size: 1.3rem;
+}
+
+.display_2 {
+  font-size: 1.6rem;
+}
+
+.display_3 {
+  font-size: 1.9rem;
+}
+
+.display_md_1 {
+  font-size: 1.5rem;
+}
+
+.display_md_2 {
+  font-size: 2.5rem;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.list_style_0 li {
+  list-style: none;
+}
+
+.font-awesome-pseudo_before:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.font-awesome-pseudo_after:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* ###########################
+ COLORS
+ ########################### */
+.bg_primary {
+  /* background-color: $primaryColor; */
+}
+
+.bg_secondary {
+  /* background-color: $secondaryColor; */
+}
+
+.bg_orange {
+  /* background-color: $orangeColor; */
+}
+
+.bg_secondaryDark {
+  /* background-color: $deepGreen; */
+}
+
+.bg_grey {
+  background-color: #656565;
+}
+
+.text_primary {
+  color: #5b9438;
+}
+
+.text_secondary {
+  /* color: $secondaryColor; */
+}
+
+.text_orange {
+  /* color: $orangeColor; */
+}
+
+.text_secondaryDark {
+  /* color: $deepGreen; */
+}
+
+.text_light {
+  color: #c4c4c4;
+}
+
+.rotate_45 {
+  transform: rotate(45deg);
+}
+
+/* ###########################
+ COMPONENTS
+ ########################### */
+.form-control,
+.btn {
+  transition: all 300ms ease-in-out;
+}
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn_primary {
+  background-color: #3b5e25;
+  color: #ffffff;
+}
+.btn_primary:hover {
+  color: #ffffff;
+  background-color: #5b9438;
+}
+
+#sidebarMenu .feather {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ###########################
+ PAGES
+ ########################### */
+#loginFormWrapper,
+#registerFormWrapper,
+#forgot_password_page #inner {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 13vh;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+#overlay.hide {
+  display: none;
+}
+
+#reset_password_page .content-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
