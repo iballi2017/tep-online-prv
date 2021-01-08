@@ -48,10 +48,10 @@
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">FORM NUMBER</th>
-                            <th scope="col">DATE</th>
-                            <th scope="col">STATUS</th>
-                            <th scope="col" colspan="2"></th>
+                            <th scope="col" class="min_w_200px">FORM NUMBER</th>
+                            <th scope="col" class="min_w_100px">DATE</th>
+                            <th scope="col" class="min_w_100px">STATUS</th>
+                            <th scope="col" colspan="2" class="min_w_100px"></th>
                         </tr>
                     </thead>
                     <tbody>
