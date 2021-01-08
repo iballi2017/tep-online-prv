@@ -9,7 +9,7 @@ $primaryColorDark: #c16f0b;
 $lightColor: #c4c4c4;
 $darkColor: #202020;
 $greyColor: #656565;
-$lightGreyColor: #E5E5E5;
+$lightGreyColor: #e5e5e5;
 $greenColor: #3b5e25;
 $blueColor: #5eb1bf;
 $dangerColor: #ea526f;
@@ -36,7 +36,7 @@ body {
     margin: 0;
     padding: 0;
     color: $darkColor;
-    font-size: 0.890rem;
+    font-size: 0.89rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -417,13 +417,13 @@ input[type="number"] {
 .min_w_200px {
     min-width: 200px;
 }
-.min_w_100px{
+.min_w_100px {
     min-width: 100px;
 }
 .min_w_350px {
     min-width: 350px;
 }
-.min_w_60px{
+.min_w_60px {
     min-width: 60px;
 }
 
@@ -456,11 +456,11 @@ input[type="number"] {
 .spe_form_grp {
     width: 150px;
     label,
-    input {
+    input[type="date"] {
         display: block;
         width: 100%;
     }
-    input,
+    input[type="date"],
     select {
         height: 50px;
         padding: 3px 4px;
@@ -470,6 +470,31 @@ input[type="number"] {
             top: 0.34em;
         }
     }
+}
+
+.radio_select_option {
+    + .dropdown-menu {
+        .dropdown-item:hover {
+            background-color: $primaryColor;
+            color: #ffffff;
+            transition: all 300ms ease-in-out;
+        }
+        input.form-check-input {
+            position: absolute;
+            opacity: 0;
+            + label {
+                text-transform: uppercase;
+                font-size: 0.9rem;
+            }
+            &:checked + label {
+                color: $primaryColor;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.dropdown-toggle::after{
+    color: $primaryColor;
 }
 
 table {

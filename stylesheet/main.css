@@ -468,17 +468,39 @@ input[type=number] {
   width: 150px;
 }
 .spe_form_grp label,
-.spe_form_grp input {
+.spe_form_grp input[type=date] {
   display: block;
   width: 100%;
 }
-.spe_form_grp input,
+.spe_form_grp input[type=date],
 .spe_form_grp select {
   height: 50px;
   padding: 3px 4px;
 }
 .spe_form_grp .select_drop_wrapper::after {
   top: 0.34em;
+}
+
+.radio_select_option + .dropdown-menu .dropdown-item:hover {
+  background-color: #5b9438;
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+.radio_select_option + .dropdown-menu input.form-check-input {
+  position: absolute;
+  opacity: 0;
+}
+.radio_select_option + .dropdown-menu input.form-check-input + label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.radio_select_option + .dropdown-menu input.form-check-input:checked + label {
+  color: #5b9438;
+  font-weight: 600;
+}
+
+.dropdown-toggle::after {
+  color: #5b9438;
 }
 
 table td .feather {

@@ -19,29 +19,73 @@
                     </div>
                 </div>
             </div>
-
             <div class="mb-4">
                 <!-- Filter -->
                 <form action="#">
-                    <div class="d-flex flex-wrap">
-                        <div class="spe_form_grp">
-                            <label for="filterDate">Date</label>
-                            <input type="date" name="filterDate" id="filterDate">
-                        </div>
-                        <div class="spe_form_grp">
-                            <label for="filterStatus">Status</label>
-                            <div class="select_drop_wrapper">
-                                <select class="custom-select">
-                                    <option selected>All Statuses</option>
-                                    <option value="pending" class="uppercase">Pending</option>
-                                    <option value="declined" class="uppercase">Declined</option>
-                                    <option value="accepted" class="uppercase">Accepted</option>
-                                </select>
+                    <div class="">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="d-flex flex-wrap">
+                                    <div class="spe_form_grp">
+                                        <label for="filterDate">From</label>
+                                        <input type="date" name="filterDate" id="filterDate">
+                                    </div>
+                                    <div class="spe_form_grp">
+                                        <label for="filterDate2">To</label>
+                                        <input type="date" name="filterDate2" id="filterDate2">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex align-items-end">
+                                <div class="spe_form_grp ml-md-auto">
+                                    <div class="dropdown w-100 text-md-right">
+                                        <a href="#" class="btn btn-default px-0 dropdown-toggle radio_select_option"
+                                            type="button" id="status_filter_selection" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <!-- Selected Option appears here -->
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="status_filter_selection">
+                                            <form action="#">
+                                                <div class="form-check dropdown-item">
+                                                    <input class="form-check-input" type="radio" name="prv_form_status"
+                                                        id="view_all" value="view_all">
+                                                    <label class="form-check-label" for="view_all">
+                                                        View All
+                                                    </label>
+                                                </div>
+                                                <div class="form-check dropdown-item">
+                                                    <input class="form-check-input" type="radio" name="prv_form_status"
+                                                        id="pending" value="pending">
+                                                    <label class="form-check-label" for="pending">
+                                                        Pending
+                                                    </label>
+                                                </div>
+                                                <div class="form-check dropdown-item">
+                                                    <input class="form-check-input" type="radio" name="prv_form_status"
+                                                        id="declined" value="declined">
+                                                    <label class="form-check-label" for="declined">
+                                                        Declined
+                                                    </label>
+                                                </div>
+                                                <div class="form-check dropdown-item">
+                                                    <input class="form-check-input" type="radio" name="prv_form_status"
+                                                        id="accepted" value="accepted">
+                                                    <label class="form-check-label" for="accepted">
+                                                        Accepted
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+
 
             <!-- table -->
             <div class="table-responsive">

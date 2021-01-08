@@ -150,8 +150,8 @@
 
                 <div class="mb-5">
                     <!-- <button class="btn btn-success uppercase px-5 rounded-0">Edit</button> -->
-                    <a href="edit-prv-form.php" type="button" class="btn btn-success uppercase px-5 rounded-0">Approved</a>
-                    <button type="button" class="btn btn-danger uppercase px-5 rounded-0">Rejected</button>
+                    <a href="edit-prv-form.php" type="button" class="btn btn-success uppercase px-5 rounded-0">Edit</a>
+                    <button type="button" class="btn btn-danger uppercase px-5 rounded-0">Delete</button>
                 </div>
             </section>
         </main>
